@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '@/components/Button'
 import ProjectCard from '@/components/ProjectCard'
 import { getAllBooks } from '@/data/books'
@@ -127,7 +128,7 @@ export default function HomePage() {
       {/* Cybersecurity Section */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-2">
-          <a href="/cybersecurity" className="hover:text-[#008080] transition-colors">Cybersecurity</a>
+          <Link href="/cybersecurity" className="hover:text-[#008080] transition-colors">Cybersecurity</Link>
         </h2>
         <p className="text-sm text-gray-600 mb-6">Projects & writeups</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -148,7 +149,7 @@ export default function HomePage() {
       {/* Cover 2 Cover Section */}
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-2">
-          <a href="/blog" className="hover:text-[#008080] transition-colors">Cover 2 Cover</a>
+          <Link href="/blog" className="hover:text-[#008080] transition-colors">Cover 2 Cover</Link>
         </h2>
         <p className="text-sm text-gray-600 mb-6">Book notes and reflections</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -170,7 +171,7 @@ export default function HomePage() {
       {/* Indie Apps Section */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-2">
-          <a href="/apps" className="hover:text-[#008080] transition-colors">Indie Apps</a>
+          <Link href="/apps" className="hover:text-[#008080] transition-colors">Indie Apps</Link>
         </h2>
         <p className="text-sm text-gray-600 mb-6">Vibes & creations</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

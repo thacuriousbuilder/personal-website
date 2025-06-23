@@ -3,13 +3,13 @@ import CybersecurityReview from '@/components/CybersecurityReview'
 import { getProjectById } from '@/data/cybersecurity'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default function CybersecurityProjectPage({ params }: PageProps) {
-  const project = getProjectById(params.slug)
+export default async function CybersecurityProjectPage({ params }: PageProps) {
+  const project = getProjectById((await params).slug)
 
   if (!project) {
     notFound()
