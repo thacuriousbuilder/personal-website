@@ -74,7 +74,7 @@ export const indieApps: IndieApp[] = [
       github: 'https://github.com/thacuriousbuilder/savantra',
     },
     media: [{
-      src: '/images/apps/savantraLogo.png',
+      src: '/images/apps/savantralogo.png',
       alt: 'Savantra screenshot'
     }]
   },
