@@ -32,7 +32,7 @@ export const books: BookReview[] = [
     category: 'Africa',
     reviewDate: '06/22/2025',
     status: 'published',
-    coverImage: '/images/books/bright-continent.jpg',
+    coverImage: '/images/books/Bright-continent.jpg',
     review: {
       introduction: 'When I first picked up "The Bright Continent," I did not know what to expect. But to my delight what I found was an exploration of the innovative solutions and resilient systems that Africans have built to navigate around dysfunctional formal institutions.',
       whatILoved: 'Olopade masterfully reframes the conversation about Africa by introducing her concept of "kanju"—the specific creativity born from African difficulty. Rather than viewing constraints as limitations, she demonstrates how they\'ve fostered remarkable innovation and resourcefulness. Her five maps (Family, Technology, Commerce, Nature, and Youth) provide a brilliant framework for understanding the continent\'s authentic social and economic dynamics that exist parallel to—and often more effectively than—formal state structures.',
