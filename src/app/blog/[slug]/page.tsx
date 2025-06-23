@@ -3,9 +3,9 @@ import BookReview from '@/components/BookReview'
 import { getBookById } from '@/data/books'
 
 interface BookPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function BookPage({ params }: BookPageProps) {

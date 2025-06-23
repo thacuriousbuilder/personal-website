@@ -3,9 +3,9 @@ import IndieAppReview from '@/components/IndieAppReview'
 import { getAppById } from '@/data/indieApps'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function IndieAppPage({ params }: PageProps) {
