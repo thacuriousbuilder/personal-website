@@ -45,9 +45,11 @@ export const indieApps: IndieApp[] = [
       concept: '10/15/2024',
       development: '06/15/2025',
       updates: [
-        'Created the repo and set up the expo project',
-        'Figma Mockups',
+        'Placeholder screens for the app: Home, Course, Create, Quiz, Profile',
+        'Navigation Architecture implemented: Root Navigation, Bottom Tab Navigation, Stack Navigation',
         'Created the theme and components',
+        'Figma Mockups',
+        'Created the repo and set up the expo project',
       ]
     },
     content: {
