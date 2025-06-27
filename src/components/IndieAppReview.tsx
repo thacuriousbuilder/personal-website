@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Button from '@/components/Button'
 
@@ -45,6 +48,8 @@ export default function IndieAppReview({
   content,
   links,
 }: IndieAppReviewProps) {
+  const [showAllUpdates, setShowAllUpdates] = useState(false)
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'live': return 'bg-green-100 text-green-800'
@@ -244,7 +249,7 @@ export default function IndieAppReview({
             <div className="mt-8">
               <h3 className="font-semibold text-lg mb-4">Updates & Iterations</h3>
               <div className="space-y-3">
-                {timeline.updates.map((update, index) => (
+                {(showAllUpdates ? timeline.updates : timeline.updates.slice(0, 5)).map((update, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
                     <div>
@@ -253,6 +258,16 @@ export default function IndieAppReview({
                   </div>
                 ))}
               </div>
+              {timeline.updates.length > 5 && (
+                <div className="mt-4">
+                  <button
+                    onClick={() => setShowAllUpdates(!showAllUpdates)}
+                    className="text-[#008080] hover:text-[#006666] font-medium transition-colors"
+                  >
+                    {showAllUpdates ? 'Show Less' : `Show ${timeline.updates.length - 5} More Updates`}
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>
