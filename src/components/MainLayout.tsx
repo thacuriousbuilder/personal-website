@@ -10,6 +10,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     { name: 'Home', href: '/' },
     { name: 'Cybersecurity', href: '/cybersecurity' },
     { name: 'Cover 2 Cover', href: '/blog' },
+    { name: 'Curiosity', href: '/curiosity' },
     { name: 'Indie Apps', href: '/apps' },
     { name: 'About', href: '/about' }
   ]
