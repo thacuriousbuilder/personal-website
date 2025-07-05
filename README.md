@@ -2,23 +2,13 @@
 
 A clean, minimalist personal portfolio built with modern web technologies. Features a modular component architecture with sections for blogging, cybersecurity projects, indie apps, and creative ideas.
 
-## Tech Stack
-
-- **Framework**: Next.js (App Router)
-- **Styling**: Tailwind CSS
-- **Content**: Markdown & JSON
-- **Deployment**: Vercel
-- **Font**: Inter
-
-## Design Philosophy
-
-Minimalist design with generous whitespace, focusing on content readability and user experience. The color palette uses a light background (#fefefe), dark text (#2b2b2b), and teal accents (#008080).
 
 ## Site Structure
 
 - **Home** - Personal introduction with social links and navigation
 - **Cover 2 Cover** - Blog posts with markdown content
 - **Cybersecurity** - Project writeups and security research
+- - **Curiosity** - Bloggig about interesting articles and thoughts I have
 - **Indie Apps** - Portfolio of built applications
 - **Ideas & Curiosity** - Collection of thoughts and concepts
 - **Contact** - Simple contact information
