@@ -1,8 +1,9 @@
 import { curiosityPosts } from '../../../data/curiosity';
 import { notFound } from 'next/navigation';
 import React from 'react';
+import Link from 'next/link';
 
-// Helper to extract headings from content (very basic, for demo)
+// Helper to extract headings from content 
 function extractHeadings(content: string) {
   // This will match lines that start with #, ##, or ### (markdown headings)
   return content
@@ -16,8 +17,9 @@ function extractHeadings(content: string) {
     });
 }
 
-export default function CuriosityPostPage({ params }: { params: { slug: string } }) {
-  const post = curiosityPosts.find((p) => p.slug === params.slug);
+export default async function CuriosityPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = curiosityPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -55,7 +57,7 @@ export default function CuriosityPostPage({ params }: { params: { slug: string }
       </aside>
       {/* Main Content */}
       <main className="flex-1 max-w-3xl mx-auto px-4 pt-12 pb-16">
-        <a href="/curiosity" className="text-emerald-700 hover:underline text-sm mb-6 inline-block">← Back to Curiosity</a>
+        <Link href="/curiosity" className="text-emerald-700 hover:underline text-sm mb-6 inline-block">← Back to Curiosity</Link>
         <h1 className="text-4xl font-bold mb-2">{post.title}</h1>
         <div className="text-sm text-gray-500 mb-6">Published: {publishedDate}</div>
         {/* Render content with headings as anchors */}
