@@ -6,15 +6,38 @@ import Link from 'next/link'
 import Button from '@/components/Button'
 import { getAllBooks } from '@/data/books'
 
+const categoryList = [
+  { name: 'All', key: 'all' },
+  { name: 'Technology', key: 'Technology' },
+  { name: 'Business', key: 'Business' },
+  { name: 'Philosophy', key: 'Philosophy' },
+  { name: 'Africa', key: 'Africa' },
+  { name: 'Productivity', key: 'Productivity' },
+  { name: 'Entertainment', key: 'Entertainment' },
+]
+
 export default function Cover2CoverPage() {
   const [visibleReviews, setVisibleReviews] = useState(3)
   const [showAll, setShowAll] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState('all')
 
   // Fetch books from the centralized data
   const allBooks = getAllBooks()
   
+  // Calculate counts for each category
+  const categories = categoryList.map(cat => ({
+    ...cat,
+    count: cat.key === 'all'
+      ? allBooks.length
+      : allBooks.filter(book => book.category === cat.key).length
+  }))
+
+  const filteredBooks = selectedCategory === 'all'
+    ? allBooks
+    : allBooks.filter(book => book.category === selectedCategory)
+
   // Map books to ProjectCard format
-  const allReviews = allBooks.map((book, index) => ({
+  const allReviews = filteredBooks.map((book, index) => ({
     href: `/blog/${book.id}`,
     title: book.title,
     date: book.reviewDate,
@@ -69,6 +92,22 @@ export default function Cover2CoverPage() {
             a unique perspective worth sharing and discussing.
           </p>
           <p className='text-sm text-[#008080]'>Ps: These are just my thoughts and opinions.</p>
+        </div>
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-2 mb-10">
+          {categories.map((cat) => (
+            <button
+              key={cat.key}
+              onClick={() => setSelectedCategory(cat.key)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                selectedCategory === cat.key
+                  ? 'bg-[#008080] text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              {cat.name} ({cat.count})
+            </button>
+          ))}
         </div>
       </section>
 

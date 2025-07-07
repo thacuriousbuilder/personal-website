@@ -96,7 +96,7 @@ export const cybersecurityProjects: CybersecurityProject[] = [
       techniques: ['FISMA', 'PCI DSS', 'NIST SP 800-53']
     },
     links: {
-      googleDoc: 'https://docs.google.com/document/d/1_11dQOOBX1-bTOBH7VkNeHOMrMD6VyFgUNjHpKM28pY/edit?usp=sharing',
+      googleDoc: 'https://docs.google.com/document/d/1LCdb6WKE8WTCyqe7Sj00rd4Wwuw7AVpiKpn7PdGHWo0/edit?usp=sharing',
     }
   }
 ]

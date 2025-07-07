@@ -3,12 +3,14 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { curiosityPosts } from '../../data/curiosity';
 
-// Sort curiosity posts: published first, then drafts
-const sortedCuriosity = [...curiosityPosts].sort((a, b) => {
-  if (a.status === 'published' && b.status !== 'published') return -1;
-  if (a.status !== 'published' && b.status === 'published') return 1;
-  return 0;
-});
+// Show only published and upcoming posts
+const sortedCuriosity = [...curiosityPosts]
+  .filter(post => post.status === 'published' || post.status === 'upcoming')
+  .sort((a, b) => {
+    if (a.status === 'published' && b.status !== 'published') return -1;
+    if (a.status !== 'published' && b.status === 'published') return 1;
+    return 0;
+  });
 
 const categories = [
   { name: 'All Posts', key: 'all', count: curiosityPosts.length },
@@ -49,37 +51,39 @@ export default function CuriosityPage() {
         {/* Blog Post Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/curiosity/${post.slug}`}
-              className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col transition-all duration-300 hover:shadow-xl hover:bg-gray-50 transform hover:-translate-y-1"
-            >
-              <div className="flex items-center justify-between mb-2">
-                <h2 className="text-xl font-semibold text-zinc-900">
-                  {post.title}
-                </h2>
-                <span
-                  className={`text-xs px-2 py-0.5 rounded-full font-medium ml-2 ${
-                    post.status === 'published'
-                      ? 'bg-emerald-100 text-emerald-700'
-                      : 'bg-zinc-200 text-zinc-500'
-                  }`}
-                >
-                  {post.status}
-                </span>
-              </div>
-              <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded-full text-xs border border-zinc-200"
-                  >
-                    {tag}
+            post.status === 'upcoming' ? (
+              <div
+                key={post.slug}
+                className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col opacity-60 cursor-not-allowed relative transition-all duration-300"
+                tabIndex={-1}
+                aria-disabled="true"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    {post.title}
+                  </h2>
+                  <span className="text-xs px-2 py-0.5 rounded-full font-medium ml-2 bg-yellow-100 text-yellow-800">
+                    Upcoming
                   </span>
-                ))}
+                </div>
+                <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
+                <div className="flex flex-wrap gap-2 mt-auto"></div>
               </div>
-            </Link>
+            ) : (
+              <Link
+                key={post.slug}
+                href={`/curiosity/${post.slug}`}
+                className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col transition-all duration-300 hover:shadow-xl hover:bg-gray-50 transform hover:-translate-y-1"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h2 className="text-xl font-semibold text-zinc-900">
+                    {post.title}
+                  </h2>
+                </div>
+                <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
+                <div className="flex flex-wrap gap-2 mt-auto"></div>
+              </Link>
+            )
           ))}
         </div>
       </div>
