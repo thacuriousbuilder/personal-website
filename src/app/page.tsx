@@ -4,6 +4,7 @@ import ProjectCard from '@/components/ProjectCard'
 import { getAllBooks } from '@/data/books'
 import { getAllApps } from '@/data/indieApps'
 import { getAllProjects } from '@/data/cybersecurity'
+import { curiosityPosts } from '@/data/curiosity'
 
 export default function HomePage() {
   // Fetch books from the centralized data
@@ -44,6 +45,23 @@ export default function HomePage() {
     variant: "cybersecurity" as const,
     category: project.category,
     placeholder: index === 0 ? "square" as const : index === 1 ? "circle" as const : "triangle" as const,
+  }))
+
+  // Sort curiosity posts: published first, then drafts
+  const sortedCuriosity = [...curiosityPosts].sort((a, b) => {
+    if (a.status === 'published' && b.status !== 'published') return -1;
+    if (a.status !== 'published' && b.status === 'published') return 1;
+    return 0;
+  });
+
+  // Get the first 3 curiosity posts for the main page preview
+  const featuredCuriosity = sortedCuriosity.slice(0, 3).map((post, index) => ({
+    href: `/curiosity/${post.slug}`,
+    title: post.title,
+    description: post.summary,
+    variant: 'cybersecurity' as const, // Use a clean card style
+    category: undefined, // No category for curiosity
+    placeholder: index === 0 ? 'square' as const : index === 1 ? 'circle' as const : 'triangle' as const,
   }))
 
   // Social media icons
@@ -163,6 +181,27 @@ export default function HomePage() {
               placeholder={book.placeholder}
               coverImage={book.coverImage}
               comingSoon={book.comingSoon}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Curiosity Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-2">
+          <Link href="/curiosity" className="hover:text-[#008080] transition-colors">Curiosity</Link>
+        </h2>
+        <p className="text-sm text-gray-600 mb-6">Personal blog posts, articles, and thoughts</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {featuredCuriosity.map((post, index) => (
+            <ProjectCard
+              key={index}
+              href={post.href}
+              title={post.title}
+              description={post.description}
+              variant={post.variant}
+              category={post.category}
+              placeholder={post.placeholder}
             />
           ))}
         </div>

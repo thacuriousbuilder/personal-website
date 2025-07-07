@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ReactMarkdown from 'react-markdown'
 
 interface MediaItem {
   src: string
@@ -22,7 +23,6 @@ interface BookReviewProps {
     page: string
   }>
   media?: MediaItem[]
-  fullReviewLink?: string
 }
 
 export default function BookReview({
@@ -32,8 +32,7 @@ export default function BookReview({
   category,
   review,
   quotes,
-  media,
-  fullReviewLink
+  media
 }: BookReviewProps) {
   return (
     <div className="max-w-4xl mx-auto">
@@ -60,22 +59,28 @@ export default function BookReview({
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-2">Review</h2>
         
-        <div className="prose prose-lg max-w-none">
-          <p className="text-gray-700 mb-6">
-            {review.introduction}
-          </p>
-          
+        <div className="prose prose-lg max-w-none space-y-4">
+          <div className="text-gray-700 leading-relaxed space-y-4">
+            <ReactMarkdown>
+              {review.introduction}
+            </ReactMarkdown>
+          </div>
           <h3 className="text-xl font-semibold mb-2 text-[#2b2b2b]">What I Loved</h3>
-          <p className="text-gray-700 mb-6">
-            {review.whatILoved}
-          </p>
-          
+          <div className="mb-6 text-lg leading-relaxed space-y-4">
+            <ReactMarkdown>
+              {review.whatILoved}
+            </ReactMarkdown>
+          </div>
           <h3 className="text-xl font-semibold mb-2 text-[#2b2b2b]">Key Takeaways</h3>
-          <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+          <div className="space-y-4 mb-6">
             {review.keyTakeaways.map((takeaway, index) => (
-              <li key={index}>{takeaway}</li>
+              <div key={index} className="text-lg leading-relaxed">
+                <ReactMarkdown>
+                  {takeaway}
+                </ReactMarkdown>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
@@ -124,28 +129,14 @@ export default function BookReview({
       {/* Call to Action */}
       <section className="mb-16">
         <div className="bg-gray-50 rounded-lg p-8 text-center">
-          <h3 className="text-xl font-bold mb-4">Want to dive deeper?</h3>
+          <h3 className="text-xl font-bold mb-4">Thank you for reading!</h3>
           <p className="text-gray-600 mb-6">
-            Read the full breakdown and explore more book reviews in my reading journey.
+             If you enjoyed it, feel free to check out my other book reviews below.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {fullReviewLink ? (
-              <>
-                <a href={fullReviewLink} target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#006666] transition-colors">
-                  Read Full Breakdown
-                </a>
-                <Link href="/blog" className="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                  View All Reviews
-                </Link>
-              </>
-            ) : (
-              <>
-                <p className="text-gray-600 italic">Full breakdown coming soon!</p>
-                <Link href="/blog" className="px-6 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#006666] transition-colors">
-                  View All Reviews
-                </Link>
-              </>
-            )}
+            <Link href="/blog" className="px-6 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#006666] transition-colors">
+              View All Reviews
+            </Link>
           </div>
         </div>
       </section>
