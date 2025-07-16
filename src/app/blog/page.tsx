@@ -163,10 +163,10 @@ export default function Cover2CoverPage() {
           <div className="border border-gray-200 rounded-lg p-4 hover:border-[#008080] transition-colors">
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="font-semibold text-lg mb-1">Africa why economist get&apos;s it&apos;s wrong</h3>
-                <p className="text-gray-600 mb-2">Morten Jerven</p>
+                <h3 className="font-semibold text-lg mb-1">Dead Aid</h3>
+                <p className="text-gray-600 mb-2">Dambisa Moyo</p>
                 <p className="text-sm text-gray-700">
-                A central argument regarding economists and Africa is that economists often misinterpret African economic development.
+                A critique of the international aid system and its impact on Africa.
                 </p>
               </div>
               <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">In Progress</span>
