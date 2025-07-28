@@ -98,6 +98,30 @@ export const cybersecurityProjects: CybersecurityProject[] = [
     links: {
       googleDoc: 'https://docs.google.com/document/d/1LCdb6WKE8WTCyqe7Sj00rd4Wwuw7AVpiKpn7PdGHWo0/edit?usp=sharing',
     }
+  },
+  {
+    id: 'Security-System',
+    title: 'Security System Evaluation and Remediation',
+    description: 'As the chief information security officer (CISO) of Fielder Medical Center (FMC), I have been tasked to review a security assessment report provided by an external consulting firm.',
+    category: 'Research',
+    date: '07/28/2025',
+    status: 'published',
+    tags: ['Cloud Security', 'Documentation', 'Employee Offboarding', 'Security Assessment'],
+    content: {
+      summary: 'The report identifies potential compliance issues requiring the system security plan (SSP) to be updated, including some security controls in place or planned for system requirements. This assessment is because FMC wants to improve its data management with its digitization goals. The data being stored is sensitive and may contain personally identifiable information. As FMC’s CISO, I will be responsible for identifying and developing a strategy to address the risks identified in the attached “Security Assessment Report for Fielder Medical Center” provided by the external consulting firm. This paper will outline the confirmation or rejection of the findings by evaluating the focus points of the security assessment report, and will also develop a remediation plan for compliance based on the NIST SP-800-53 revision 5.',
+      keyFindings: [
+        'Control Framework Misalignment',
+        'Inadequate Data Protection Measures',
+        'Legacy Infrastructure Risks',
+        'Workstation Endpoint Security Gaps',
+        'Lack of Multifactor Authentication (MFA)',
+        'Weak Identity and Access Management (IAM)'
+      ],
+      techniques: ['FISMA', 'PCI DSS', 'NIST SP 800-53', 'SSP']
+    },
+    links: {
+      googleDoc: 'https://docs.google.com/document/d/1AyJUdXuoNyzpXSQRr6dLnj0iukLrVvL7FKEBhdl0_04/edit?usp=sharing',
+    }
   }
 ]
 
