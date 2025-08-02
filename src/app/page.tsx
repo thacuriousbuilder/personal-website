@@ -47,12 +47,14 @@ export default function HomePage() {
     placeholder: index === 0 ? "square" as const : index === 1 ? "circle" as const : "triangle" as const,
   }))
 
-  // Sort curiosity posts: published first, then drafts
-  const sortedCuriosity = [...curiosityPosts].sort((a, b) => {
-    if (a.status === 'published' && b.status !== 'published') return -1;
-    if (a.status !== 'published' && b.status === 'published') return 1;
-    return 0;
-  });
+  // Sort curiosity posts: published first, then upcoming (exclude drafts)
+  const sortedCuriosity = [...curiosityPosts]
+    .filter(post => post.status === 'published' || post.status === 'upcoming')
+    .sort((a, b) => {
+      if (a.status === 'published' && b.status !== 'published') return -1;
+      if (a.status !== 'published' && b.status === 'published') return 1;
+      return 0;
+    });
 
   // Get the first 3 curiosity posts for the main page preview
   const featuredCuriosity = sortedCuriosity.slice(0, 3).map((post, index) => ({

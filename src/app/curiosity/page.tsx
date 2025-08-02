@@ -13,9 +13,9 @@ const sortedCuriosity = [...curiosityPosts]
   });
 
 const categories = [
-  { name: 'All Posts', key: 'all', count: curiosityPosts.length },
-  { name: 'Tech', key: 'Tech', count: curiosityPosts.filter(p => p.tags.includes('Tech')).length },
-  { name: 'Personal', key: 'Personal', count: curiosityPosts.filter(p => p.tags.includes('Personal')).length },
+  { name: 'All Posts', key: 'all', count: sortedCuriosity.length },
+  { name: 'Tech', key: 'Tech', count: sortedCuriosity.filter(p => p.tags.includes('Tech')).length },
+  { name: 'Personal', key: 'Personal', count: sortedCuriosity.filter(p => p.tags.includes('Personal')).length },
 ];
 
 export default function CuriosityPage() {
@@ -51,39 +51,28 @@ export default function CuriosityPage() {
         {/* Blog Post Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPosts.map((post) => (
-            post.status === 'upcoming' ? (
-              <div
-                key={post.slug}
-                className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col opacity-60 cursor-not-allowed relative transition-all duration-300"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="text-xl font-semibold text-zinc-900">
-                    {post.title}
-                  </h2>
+            <Link
+              key={post.slug}
+              href={`/curiosity/${post.slug}`}
+              className={`bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col transition-all duration-300 ${
+                post.status === 'upcoming' 
+                  ? 'opacity-75 hover:opacity-90 hover:shadow-lg transform hover:-translate-y-1' 
+                  : 'hover:shadow-xl hover:bg-gray-50 transform hover:-translate-y-1'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-xl font-semibold text-zinc-900">
+                  {post.title}
+                </h2>
+                {post.status === 'upcoming' && (
                   <span className="text-xs px-2 py-0.5 rounded-full font-medium ml-2 bg-yellow-100 text-yellow-800">
                     Upcoming
                   </span>
-                </div>
-                <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
-                <div className="flex flex-wrap gap-2 mt-auto"></div>
+                )}
               </div>
-            ) : (
-              <Link
-                key={post.slug}
-                href={`/curiosity/${post.slug}`}
-                className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm flex flex-col transition-all duration-300 hover:shadow-xl hover:bg-gray-50 transform hover:-translate-y-1"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="text-xl font-semibold text-zinc-900">
-                    {post.title}
-                  </h2>
-                </div>
-                <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
-                <div className="flex flex-wrap gap-2 mt-auto"></div>
-              </Link>
-            )
+              <p className="text-zinc-600 text-sm mb-4 flex-1">{post.summary}</p>
+              <div className="flex flex-wrap gap-2 mt-auto"></div>
+            </Link>
           ))}
         </div>
       </div>
