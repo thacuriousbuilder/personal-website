@@ -135,9 +135,9 @@ export default function HomePage() {
             <Button href="https://github.com/thacuriousbuilder" external variant="secondary" size="sm" icon={icons.github}>
               GitHub
             </Button>
-            <Button href="https://x.com/thacuriousb" external variant="secondary" size="sm" >
+            {/* <Button href="https://x.com/thacuriousb" external variant="secondary" size="sm" >
               X (Twitter)
-            </Button>
+            </Button> */}
           </div>
           <p className="text-sm font-bold text-gray-600 mt-4">
             Email me at: <span className="text-[#008080]">camaraalhouseny44@gmail.com</span>
