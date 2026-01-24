@@ -32,6 +32,29 @@ If you've been thinking about starting a side project, go for it! The journey is
     tags: [ 'Tech', 'AI'],
     date: '2024-05-01',
   },
+  {
+    title: 'Micro Businesses Are The Present ',
+    slug: 'micro-business-are-the-present',
+    status: 'upcoming',
+    summary:
+      'My thoughts on how AI is changing the workforce and creating new economic opportunities.',
+    content: `# Introduction
+Building side projects has always been a source of joy and learning for me. In this post, I want to share why I believe everyone should try building something on their own.
+
+## The Freedom to Experiment
+When you work on your own project, you have the freedom to try new technologies, approaches, and ideas without the constraints of a formal job or client work.
+
+### Learning by Doing
+Nothing beats hands-on experience. Every side project is an opportunity to learn, fail, and grow.
+
+## Building a Portfolio
+Side projects are a great way to showcase your skills to potential employers or collaborators. They are living proof of your initiative and creativity.
+
+# Conclusion
+If you've been thinking about starting a side project, go for it! The journey is as rewarding as the outcome.`,
+    tags: [ 'Tech', 'AI'],
+    date: '2024-05-01',
+  },
   // {
   //   title: 'The Future of Human-AI Collaboration',
   //   slug: 'future-of-human-ai-collaboration',

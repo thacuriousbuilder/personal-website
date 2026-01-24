@@ -27,6 +27,7 @@ export default function CybersecurityPage() {
     { id: 'Tools', name: 'Tools', count: getProjectsByCategory('Tools').filter(project => project.status === 'published' || project.status === 'in-progress').length },
     { id: 'Research', name: 'Research', count: getProjectsByCategory('Research').filter(project => project.status === 'published' || project.status === 'in-progress').length },
     { id: 'Writeups', name: 'Writeups', count: getProjectsByCategory('Writeups').filter(project => project.status === 'published' || project.status === 'in-progress').length },
+    { id: 'Cloud', name: 'Cloud', count: getProjectsByCategory('Cloud').filter(project => project.status === 'published' || project.status === 'in-progress').length },
   ]
 
   const handleShowMore = () => {

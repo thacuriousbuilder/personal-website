@@ -114,10 +114,8 @@ export default function HomePage() {
           </p>
           
           <p>
-            I enjoy exploring everything from app 
-            development to security research/implementation and the 
-            endless possibilities born from a curious 
-            mindset.
+            I enjoy exploring everything from  security research/implementation to app 
+            development and the endless possibilities born from a curious mindset.
           </p>
           
           <p className='font-bold'>
@@ -166,27 +164,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Cover 2 Cover Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-2">
-          <Link href="/blog" className="hover:text-[#008080] transition-colors">Cover 2 Cover</Link>
-        </h2>
-        <p className="text-sm text-gray-600 mb-6">Book notes and reflections</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {featuredBooks.map((book, index) => (
-            <ProjectCard 
-              key={index}
-              href={book.href}
-              title={book.title}
-              date={book.date}
-              variant={book.variant}
-              placeholder={book.placeholder}
-              coverImage={book.coverImage}
-              comingSoon={book.comingSoon}
-            />
-          ))}
-        </div>
-      </section>
 
       {/* Curiosity Section */}
       <section className="mb-8">
@@ -204,6 +181,29 @@ export default function HomePage() {
               variant={post.variant}
               category={post.category}
               placeholder={post.placeholder}
+            />
+          ))}
+        </div>
+      </section>
+
+
+      {/* Cover 2 Cover Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-2">
+          <Link href="/blog" className="hover:text-[#008080] transition-colors">Cover 2 Cover</Link>
+        </h2>
+        <p className="text-sm text-gray-600 mb-6">Book notes and reflections</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {featuredBooks.map((book, index) => (
+            <ProjectCard 
+              key={index}
+              href={book.href}
+              title={book.title}
+              date={book.date}
+              variant={book.variant}
+              placeholder={book.placeholder}
+              coverImage={book.coverImage}
+              comingSoon={book.comingSoon}
             />
           ))}
         </div>

@@ -7,7 +7,7 @@ interface ProjectCardProps {
   date?: string
   description?: string
   variant?: 'cover2cover' | 'cybersecurity' | 'indie'
-  category?: 'SIEM' | 'Threat Hunting' | 'Tools' | 'Research' | 'Writeups' | 'Productivity' | 'Security' | 'Social' | 'Utility' | 'Experimental'
+  category?: 'SIEM' | 'Threat Hunting' | 'Tools' | 'Research' | 'Writeups' | 'Productivity' | 'Security' | 'Social' | 'Utility' | 'Experimental'|'Cloud'
   placeholder?: 'square' | 'circle' | 'triangle' | 'none'
   image?: string
   imageAlt?: string
