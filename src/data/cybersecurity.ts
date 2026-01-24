@@ -2,7 +2,7 @@ export interface CybersecurityProject {
   id: string
   title: string
   description: string
-  category: 'SIEM' | 'Threat Hunting' | 'Tools' | 'Research' | 'Writeups'
+  category: 'SIEM' | 'Threat Hunting' | 'Tools' | 'Research' | 'Writeups'|'Cloud'
   date: string
   status: 'published' | 'draft' | 'in-progress'
   tags: string[]
@@ -26,6 +26,71 @@ export interface CybersecurityProject {
 }
 
 export const cybersecurityProjects: CybersecurityProject[] = [
+  {
+    id: 'eol-directory',
+    title: 'EOL Directory: Secure Serverless Application',
+    description: 'A cloud-native web application providing End-of-Life (EOL) and End-of-Support (EOS) information for IT devices. Built using AWS serverless architecture with a security-first approach, demonstrating practical cloud security engineering principles through hands-on implementation.',
+    category: 'Cloud',
+    date: '11/16/2025', // or your preferred date
+    status: 'published', // or 'published' if you consider it complete
+    tags: [
+      'AWS Serverless',
+      'Cloud Security',
+      'IAM & Least Privilege',
+      'Threat Modeling (STRIDE)',
+      'DynamoDB',
+      'Lambda Functions',
+      'API Gateway',
+      'CloudFront & S3',
+      'KMS Encryption',
+      'Input Validation',
+      'HTTPS/TLS',
+      'Defense in Depth'
+    ],
+    content: {
+      summary: 'Developed a production-ready serverless application on AWS to track hardware End-of-Life dates, addressing critical security and compliance needs in IT infrastructure management. The project follows a sprint-based methodology with comprehensive threat modeling using STRIDE framework. All architectural decisions prioritize security controls including encryption at rest and in transit, IAM least privilege policies, multi-layer input validation, and comprehensive logging/monitoring. Built across four sprints covering data layer (DynamoDB + KMS), compute layer (Lambda + IAM), API layer (API Gateway + throttling), and frontend layer (React + CloudFront + S3).',
+      keyFindings: [
+        'Implemented customer-managed KMS encryption with automatic annual rotation for data at rest',
+        'Designed IAM roles following least privilege principles with specific resource ARNs and no wildcard permissions',
+        'Built defense-in-depth input validation across three layers (API Gateway, Lambda, client-side)',
+        'Configured CloudFront with Origin Access Identity (OAI) preventing direct S3 access and enforcing HTTPS-only traffic',
+        'Applied parameterized queries to prevent NoSQL injection attacks',
+        'Established comprehensive logging strategy that captures metadata without exposing sensitive data'
+      ],
+      tools: [
+        'AWS DynamoDB',
+        'AWS Lambda',
+        'AWS API Gateway',
+        'AWS S3',
+        'AWS CloudFront',
+        'AWS KMS',
+        'AWS IAM',
+        'AWS CloudWatch',
+        'AWS CloudTrail',
+        'React + Vite',
+        'Tailwind CSS v4',
+        'Python 3.13 (boto3)'
+      ],
+      techniques: [
+        'STRIDE Threat Modeling',
+        'Least Privilege IAM Design',
+        'Defense in Depth',
+        'Input Validation & Sanitization',
+        'Parameterized Queries',
+        'Customer-Managed Encryption (KMS)',
+        'Point-in-Time Recovery',
+        'API Rate Limiting & Throttling',
+        'Secure Logging Practices',
+        'HTTPS/TLS Enforcement',
+        'Security Headers (HSTS, X-Frame-Options)',
+        'Origin Access Identity (OAI)'
+      ]
+    },
+    links: {
+      googleDoc: 'https://docs.google.com/document/d/1d6FxRDsvPqYqrwQTpsLS91D7haqvZbOrbFvldZ8xjxk/edit?usp=sharing',
+      github: 'https://github.com/thacuriousbuilder/eol-directory',
+    }
+  },
   {
     id: 'network-merger',
     title: 'Network Merger and Implementation Plan',

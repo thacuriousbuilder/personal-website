@@ -1,7 +1,7 @@
 export interface IndieApp {
   id: string
   title: string
-  category: 'productivity' | 'security' | 'social' | 'utility' | 'experimental'
+  category: 'productivity' | 'security' | 'social' | 'utility' | 'experimental'|'health'
   status: 'live' | 'beta' | 'development' | 'planning'
   date: string
   tags: string[]
@@ -33,11 +33,86 @@ export interface IndieApp {
 
 export const indieApps: IndieApp[] = [
   {
+    id: 'haven',
+    title: 'HAVEN',
+    category: 'health',
+    status: 'development',
+    date: '2026-01-24', // Adjust based on when you actually started
+    tags: ['Health', 'Nutrition', 'AI', 'Fitness', 'B2B2C'],
+    
+    timeline: {
+      concept: '12/10/2025',
+      development: '12/13/2025', 
+      updates: [
+        'Completed comprehensive UI redesign with new design system (Teal #206E6B)',
+        'Implemented 7-day baseline week tracking with no-judgment learning period',
+        'Built dual authentication system for Trainers and Clients',
+        'Created AI-powered food recognition using GPT-4 Vision API',
+        'Developed trainer-client invite code system and relationship management',
+        'Implemented real-time messaging between trainers and clients',
+        'Built weekly calorie budget calculation with cheat day planning',
+        'Redesigned client profile, messaging, and food logging screens',
+        'Created daily check-in system with baseline comparison',
+        'Established comprehensive Row Level Security policies for multi-tenant data',
+        'Implemented timezone-consistent data handling across all features',
+        'Built WeeklyBudgetCard and WeeklyCalendar components',
+      ]
+    },
+    
+    content: {
+      summary: 'HAVEN is a weekly calorie tracking app that challenges traditional daily restrictions by implementing a flexible 7-day budgeting system, that allow users to plan cheat days and stop felling guilty of having high calorie eating day. Built as a B2B2C platform, it serves both individual users seeking sustainable eating habits and fitness professionals managing client nutrition. The app features a unique baseline week where users track eating without judgment to establish personalized weekly budgets, enabling guilt-free cheat days and long-term habit sustainability.',
+      
+      keyFeatures: [
+        'Weekly calorie budgeting instead of restrictive daily limits',
+        '7-day baseline week learning period with no-judgment tracking',
+        'Daily micro-check-ins: "Did yesterday differ from your baseline?"',
+        'Pre-planned cheat day system with automatic weekly calorie adjustments',
+        'AI-powered food recognition and nutrition estimation',
+        'Real-time trainer-client messaging and progress tracking',
+        'Automated weekly budget calculations based on baseline data',
+        'Comprehensive food logging with manual and AI-assisted entry',
+        'Trainer dashboard for managing multiple clients',
+        'Invite code system for secure trainer-client relationships',
+        'Progress analytics and weekly metrics tracking',
+      ],
+      
+      techStack: [
+        'React Native',
+        'Expo',
+        'TypeScript',
+        'Supabase (PostgreSQL, Auth, RLS, Edge Functions)',
+        'OpenAI GPT-4 Vision API',
+        'OpenAI GPT-4o-mini',
+        'React Navigation',
+        'Expo Push Notifications (planned)',
+        'Supabase Realtime',
+      ],
+      
+      challenges: [
+        'Paradigm shift: Weekly vs daily calorie thinking requires user education',
+        'Designing baseline week UX that motivates without judgment',
+        'Balancing dual audiences (B2B2C) with differentiated experiences',
+        'AI food recognition accuracy and nutrition estimation',
+        'Real-time features (messaging, updates) with offline capability',
+        'Comprehensive security with Row Level Security for multi-tenant data',
+      ]
+    },
+    
+    links: {
+      github: 'https://github.com/thacuriousbuilder/haven', // Update with actual repo
+    },
+    
+    media: [{
+      src: '/images/apps/HAVEN.svg', // Update with actual logo path
+      alt: 'HAVEN - Weekly Nutrition Freedom'
+    }]
+  },
+  {
     id: 'savantra',
     title: 'Savantra',
    
     category: 'productivity',
-    status: 'development',
+    status: 'planning',
     date: '2025-01-10',
     tags: ['Productivity', 'Education', 'AI', 'Study'],
    

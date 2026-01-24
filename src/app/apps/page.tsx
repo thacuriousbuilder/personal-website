@@ -27,6 +27,7 @@ export default function IndieAppsPage() {
     { id: 'social', name: 'Social', count: getAppsByCategory('social').length },
     { id: 'utility', name: 'Utility', count: getAppsByCategory('utility').length },
     { id: 'experimental', name: 'Experimental', count: getAppsByCategory('experimental').length },
+    { id: 'health', name: 'Health', count: getAppsByCategory('health').length },
   ]
 
   const handleShowMore = () => {

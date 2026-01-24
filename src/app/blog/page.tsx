@@ -183,9 +183,36 @@ export default function Cover2CoverPage() {
                 including the potential for AI to revolutionize industries and improve people&apos;s lives.
                 </p>
               </div>
+              <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">In Progress</span>
+            </div>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4 hover:border-[#008080] transition-colors">
+            <div className="flex items-start justify-between">
+              <div>
+                <h3 className="font-semibold text-lg mb-1">The Courage to be Disliked </h3>
+                <p className="text-gray-600 mb-2"> Ichiro Kishimi and Fumitake Koga</p>
+                <p className="text-sm text-gray-700">
+                The book advocates for living in the present moment and achieving happiness by having the courage to be disliked.
+                </p>
+              </div>
               <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Next Up</span>
             </div>
           </div>
+          
+          {/* <div className="border border-gray-200 rounded-lg p-4 hover:border-[#008080] transition-colors">
+            <div className="flex items-start justify-between">
+              <div>
+                <h3 className="font-semibold text-lg mb-1">AI 2041: Ten Visions for Our Future</h3>
+                <p className="text-gray-600 mb-2"> Kai-Fu Lee</p>
+                <p className="text-sm text-gray-700">
+                A look at the future of AI and its impact on society, 
+                including the potential for AI to revolutionize industries and improve people&apos;s lives.
+                </p>
+              </div>
+              <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Next Up</span>
+            </div>
+          </div> */}
         </div>
       </section>
 
