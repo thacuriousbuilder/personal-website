@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Alhouseny Camara',
-  description: 'Cybersecurity professional, indie app builder, and curious mind exploring the intersection of technology and human possibilities.',
+  description: 'Cybersecurity professional,  app builder, and curious mind exploring the intersection of technology and human possibilities.',
   keywords: ['cybersecurity', 'indie apps', 'software engineering', 'book reviews', 'technology'],
   authors: [{ name: 'Alhouseny Camara' }],
   creator: 'Alhouseny Camara',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://alhousenycamara.com',
     title: 'Alhouseny Camara - Cybersecurity & Indie Apps',
-    description: 'Cybersecurity professional, indie app builder, and curious mind exploring the intersection of technology and human possibilities.',
+    description: 'Cybersecurity professional,  app builder, and curious mind exploring the intersection of technology and human possibilities.',
     siteName: 'Alhouseny Camara',
   },
   twitter: {

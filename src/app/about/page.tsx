@@ -114,22 +114,25 @@ export default function AboutPage() {
 
       {/* Work History Timeline */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-6">Work History</h2>
+        <h2 className="text-2xl font-bold mb-6">Experience</h2>
         <div className="space-y-8">
           {/* Current Role */}
           <div className="relative">
             <div className="absolute left-4 top-0 w-3 h-3 bg-black rounded-full"></div>
             <div className="ml-12">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-xl font-semibold">IT Security & Cloud Support Analyst</h3>
+                <h3 className="text-xl font-semibold">Volunteer Cloud Security Engineer</h3>
                 <span className="text-sm text-gray-500">October 2024 - Present</span>
               </div>
               <p className="text-gray-600 mb-2">Company: Guineans Succeeding In America (GSA)</p>
               <ul className="text-gray-700 space-y-3">
-                <li>• Integrated security controls into the software development lifecycle by implementing role-based access control (RBAC)</li>
-                <li>• Conducted vulnerability analysis of cloud-hosted applications and supported remediation efforts</li>
-                <li>• Collaborated with cross-functional teams to ensure system changes met security and reliability requirements</li>
-                <li>• Providing ongoing technical support for the organizational website and maintaining cloud infrastructure for member services</li>
+                <li>• Built and deployed an internal analytics platform that enables leadership to analyze member demographics,
+                      including student and professional populations, geographic distribution, employer affiliations, and educational
+                      backgrounds.</li>
+                <li>• Collaborated directly with organizational stakeholders to identify reporting needs, translate requirements into
+                actionable dashboards, and improve data visibility for strategic planning and community engagement.</li>
+                <li>• Improved the security and reliability of cloud-hosted systems supporting 500+ members by implementing role-based
+                access control (RBAC), least-privilege IAM policies, and security best practices.</li>
               </ul>
             </div>
           </div>
@@ -140,16 +143,16 @@ export default function AboutPage() {
             <div className="ml-12">
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-semibold">Software Engineer</h3>
-                <span className="text-sm text-gray-500">August 2021 - January 2024</span>
+                <span className="text-sm text-gray-500">June 2022 - January 2024</span>
               </div>
               <p className="text-gray-600 mb-2">Company: Uvii</p>
               <ul className="text-gray-700 space-y-3">
-                <li>• Developed and maintained secure application components following secure SDLC principles</li>
-                <li>• Performed regression testing and validated security fixes during application refactors</li>
-                <li>• Collaborated with product, design, and engineering teams to implement security requirements into application design</li>
-                <li>• Implemented encryption for data in transit and at rest to ensure confidentiality and integrity</li>
-                <li>• Maintained source code in Git repositories and supported version-controlled releases</li>
-                <li>• Mentored 3 interns on secure coding practices, collectively contributing 100+ lines of secure code to the GitHub code base</li>
+                <li>• Collaborated on redesigning the React Native architecture for a college student communication platform, improving
+                application performance by 35% and increasing user satisfaction by 30%.</li>
+                <li>• Automated development and troubleshooting workflows using scripting and internal tooling improvements to reduce
+                repetitive manual tasks and improve engineering efficiency.</li>
+                <li>• Integrated multi-factor authentication (MFA), encrypted sensitive data in transit and at rest, and secured API
+                communication to strengthen platform security and protect user information.</li>
               </ul>
             </div>
           </div>
@@ -160,17 +163,33 @@ export default function AboutPage() {
             <div className="ml-12">
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-xl font-semibold">Front-End Developer Intern</h3>
-                <span className="text-sm text-gray-500">January 2021 - April 2021</span>
+                <span className="text-sm text-gray-500">February 2022 - April 2022</span>
               </div>
               <p className="text-gray-600 mb-2">Company: Wall Street Journal</p>
               <ul className="text-gray-700 space-y-3">
-                <li>• Developed an internal ML dashboard tool using Python and React that analyzed headlines and suggested improvements</li>
-                <li>• Assisted in migrating core site components to Next.js, improving page load times by 29%</li>
-                <li>• Resolved 10 bugs that were pushed to the production environment</li>
+                <li>• Built an internal machine learning-powered dashboard using Python and React to analyze editorial headlines,
+                enabling newsroom teams to make more data-informed content decisions.</li>
+                <li>• Collaborated with engineers and editorial stakeholders to develop internal tooling that streamlined content analysis
+                and improved workflow efficiency.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute left-4 top-0 w-3 h-3 bg-black rounded-full"></div>
+            <div className="ml-12">
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-xl font-semibold">Software Engineer Intern</h3>
+                <span className="text-sm text-gray-500">June 2021 - August 2021</span>
+              </div>
+              <p className="text-gray-600 mb-2">Company: Uvii</p>
+              <ul className="text-gray-700 space-y-3">
+                <li>• Refactored 50+ React Native components to support a new design system, improving maintainability and creating
+                a more consistent, scalable application architecture.</li>
               </ul>
             </div>
           </div>
         </div>
+        
       </section>
 
       {/* Projects Section */}

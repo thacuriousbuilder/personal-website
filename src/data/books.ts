@@ -87,9 +87,9 @@ export const books: BookReview[] = [
     review: {
       introduction: `Karp's "The Technological Republic" fundamentally challenged my understanding of where technological innovation truly originates and who bears responsibility for its direction. Rather than accepting the Silicon Valley mythology of purely private sector disruption, Karp methodically demonstrates how every major technological breakthrough has emerged from public-private partnerships, with government laying the foundational research that private companies later commercialize and scale.
 
-The book forced me to confront uncomfortable questions about civic duty in the tech sector. Karp's critique of Silicon Valley's "disembodied generation" - brilliant minds who enjoy the protection of American security while avoiding any responsibility for maintaining it - resonated deeply. His argument isn't just philosophical; it's practical. The partnership between public innovation and private execution has the power to redefine society, and that redefinition can go either way depending on whether we embrace this responsibility or retreat from it.
+The book forced me to confront uncomfortable questions about civic duty in the tech sector. Karp's critique of Silicon Valley's "disembodied generation", brilliant minds who enjoy the protection of American security while avoiding any responsibility for maintaining it, resonated deeply. His argument isn't just philosophical; it's practical. The partnership between public innovation and private execution has the power to redefine society, and that redefinition can go either way depending on whether we embrace this responsibility or retreat from it.
 
-What struck me most was how Karp reframes government work not as bureaucratic drudgery but as the ultimate engineering challenge - solving problems at scale that actually matter. His vision of the "technological republic" isn't about government control but about intelligent cooperation that harnesses both sectors' strengths.`,
+What struck me most was how Karp reframes government work not as bureaucratic drudgery but as the ultimate engineering challenge, solving problems at scale that actually matter. His vision of the "technological republic" isn't about government control but about intelligent cooperation that harnesses both sectors' strengths.`,
       whatILoved: `**The Engineering Mindset Philosophy:** Karp's emphasis on "looking closely while suspending judgment" and his concept that "nothing of consequence is built in a straight line" provided a compelling framework for approaching complex problems with pragmatic flexibility.
 
 **Critique of "Luxury Beliefs":** His analysis of how privileged positions allow people to advocate for policies they'll never experience the consequences of was particularly sharp and relevant.
@@ -100,7 +100,7 @@ What struck me most was how Karp reframes government work not as bureaucratic dr
         '**Results Must Matter Over Performance:** The shift from outcome-based evaluation to performative discourse represents a dangerous trend that prioritizes messaging over actual problem-solving.',
         '**Collective Identity Enables Innovation:** Shared purpose and national identity aren\'t constraints on creativity but necessary foundations for sustained technological advancement.',
         '**The Engineering Mindset is Transferable:** The principles of observation, pragmatism, and iterative problem-solving that drive technological innovation can and should be applied to social and political challenges.',
-        '**Partnership Quality Determines Societal Direction:** The relationship between public and private sectors has the power to redefine society for better or worse - making its conscious cultivation crucial.'
+        '**Partnership Quality Determines Societal Direction:** The relationship between public and private sectors has the power to redefine society for better or worse, making its conscious cultivation crucial.'
       ]
     },
     quotes: [
@@ -136,25 +136,25 @@ What struck me most was how Karp reframes government work not as bureaucratic dr
     status: 'published',
     coverImage: '/images/books/deep-work.jpeg',
     review: {
-      introduction: `Rather than viewing focus as something that just happens when we eliminate distractions, Newport presents deep work as a proactive process - an environment and mindset you deliberately create. This shift from passive to active concentration was revelatory.
+      introduction: `Rather than viewing focus as something that just happens when we eliminate distractions, Newport presents deep work as a proactive process, an environment and mindset you deliberately create. This shift from passive to active concentration was revelatory.
   
-  The book's strength lies in its systematic approach to building what Newport calls "concentration stamina." The neurological explanation of myelin growth particularly resonated with me - the idea that focused practice literally builds fatty tissue around neurons, making you faster and more efficient at skills. This biological foundation makes the case for sustained, distraction-free work sessions compelling beyond just productivity rhetoric.
+  The book's strength lies in its systematic approach to building what Newport calls "concentration stamina." The neurological explanation of myelin growth particularly resonated with me, the idea that focused practice literally builds fatty tissue around neurons, making you faster and more efficient at skills. This biological foundation makes the case for sustained, distraction-free work sessions compelling beyond just productivity rhetoric.
   
   What struck me most was how Newport positions deep work not just as a professional skill but as a path to meaning and satisfaction. His argument that "a deep life is a good life" connects the practical techniques to larger questions about fulfillment and human potential.`,
   
-      whatILoved: `**The Four Philosophies of Deep Work:** Newport's framework - monastic, bimodal, rhythmic, and journalistic - provides concrete approaches rather than vague advice. The rhythmic philosophy particularly resonated with me, as it transforms deep work into a sustainable daily habit rather than something that requires perfect conditions.
+      whatILoved: `**The Four Philosophies of Deep Work:** Newport's framework - monastic, bimodal, rhythmic, and journalistic, provides concrete approaches rather than vague advice. The rhythmic philosophy particularly resonated with me, as it transforms deep work into a sustainable daily habit rather than something that requires perfect conditions.
   
   **The Myelin Growth Concept:** The neurological explanation of why focused practice works was fascinating. Understanding that "focusing intensely on a specific skill forces relevant circuits to fire in isolation, triggering myelination" gave me a scientific framework for why distraction-free work is so crucial.
   
-  **The 4DX Framework:** The discipline of execution approach - focusing on wildly important goals, acting on lead measures, keeping score, and creating accountability - provided a business-tested methodology for implementing deep work practices.
+  **The 4DX Framework:** The discipline of execution approach, focusing on wildly important goals, acting on lead measures, keeping score, and creating accountability, provided a business-tested methodology for implementing deep work practices.
   
   **Practical Strategies:** The book goes beyond theory with concrete techniques like scheduling every minute, quantifying task depth, and the craftsman approach to tool selection. These aren't just concepts but actionable frameworks.`,
   
       keyTakeaways: [
-        '**Deep Work is a Created Environment:** Success requires proactively designing your workspace, schedule, and habits to support sustained focus - it\'s not something that happens naturally in our distracted world.',
+        '**Deep Work is a Created Environment:** Success requires proactively designing your workspace, schedule, and habits to support sustained focus, it\'s not something that happens naturally in our distracted world.',
         '**Attention is a Skill That Must be Trained:** Like physical fitness, the ability to concentrate deeply requires deliberate practice and progressive building of what Newport calls "concentration stamina."',
         '**The Rhythmic Philosophy is Most Sustainable:** Making deep work a consistent daily habit is more practical than waiting for perfect conditions or large blocks of time.',
-        '**Quality Work = Intensity × Time:** This formula emphasizes that how you work matters as much as how long you work - focused effort produces exponentially better results than distracted effort.',
+        '**Quality Work = Intensity × Time:** This formula emphasizes that how you work matters as much as how long you work, focused effort produces exponentially better results than distracted effort.',
         '**Myelin Growth Explains Why Focus Works:** The neurological basis for skill development requires isolation of relevant circuits, which only happens through sustained, distraction-free practice.'
       ]
     },
@@ -164,11 +164,11 @@ What struck me most was how Karp reframes government work not as bureaucratic dr
         page: 'Throughout'
       },
       {
-        text: 'The ability to quickly master new things and the ability to produce at an elite level, with both speed and quality - if you don\'t produce you won\'t thrive',
+        text: 'The ability to quickly master new things and the ability to produce at an elite level, with both speed and quality, if you don\'t produce you won\'t thrive',
         page: 'Chapter 1'
       },
       {
-        text: 'Your world is what you pay attention to - skill management of your attention dictates your perception',
+        text: 'Your world is what you pay attention to, skill management of your attention dictates your perception',
         page: 'Chapter 3'
       },
       {
@@ -181,60 +181,102 @@ What struck me most was how Karp reframes government work not as bureaucratic dr
       }
     ]
   },
+  
   {
-    id: 'the-right-it',
-    title: 'The Right It',
-    author: 'Alberto Savoia',
-    publishedYear: '2019',
+    id: 'ai-2041',
+    title: 'AI 2041',
+    author: 'Kai-Fu Lee and Chen Qiufan',
+    publishedYear: '2021',
     category: 'Technology',
-    reviewDate: '11/06/2024',
+    reviewDate: '08/16/2025',
     status: 'published',
-    coverImage: '/images/books/the-right-it.png',
+    coverImage: '/images/books/ai2041.jpeg',
     review: {
-      introduction: `"The Right It" fundamentally challenged my approach to product development, shifting my perspective from "build first, find customers later" to "validate demand before building anything." This book came at the perfect time as I was working on my study app, Savantra, and had already started getting email signups for validation - reading Savoia's framework made me realize I was intuitively applying the fake door pretotype technique.
-  
-  The book's core insight that 90% of products fail in the market, regardless of how smart the teams building them are, was both sobering and liberating. It reinforced that market validation isn't just a nice-to-have - it's essential for survival. The immediate feedback I was getting from my email signups gave me much more confidence that Savantra was worth pursuing, and the book provided a framework for understanding why that validation mattered so much.`,
-      
-      whatILoved: `**The Pretotyping Toolkit:** The variety of pretotyping techniques (Mechanical Turk, Pinocchio, Fake Door, Facade, YouTube, One-Night Stand, Infiltrator, Relabel) provided concrete, actionable methods for testing ideas quickly and cheaply.
-  
-  **The Market Engagement Hypothesis (MEH):** The framework for expressing assumptions with numbers rather than vague words made testing much more precise and actionable.
-  
-  **"Skin in the Game" Validation:** The emphasis on meaningful commitment (validated emails, scheduled meetings, money invested) over superficial engagement (likes, comments, survey responses) was a crucial distinction.
-  
-  **Real-World Examples:** Stories like Airbnb's air mattress experiment and CarsDirect's facade approach made the concepts tangible and inspiring.`,
-      
+      introduction: `"AI 2041: Ten Visions for Our Future" pairs ten short stories by science fiction author Chen Qiufan with ten explanatory essays by AI researcher and venture capitalist Kai-Fu Lee, each covering a different technology and where it might realistically stand by the year 2041. The format works because the two halves do genuinely different jobs: Lee's essays explain what's technically plausible and why, while Chen's stories dramatize what it might actually feel like to live with that technology once it's fully woven into daily life, at work, at home, in a hospital, behind the wheel of a car.
+
+Across chapters on deep learning, computer vision, natural language processing, healthcare, virtual reality, autonomous vehicles, quantum computing, labor displacement, and post-scarcity economics, the book is consistently better at describing the technology than at resolving the human problems it introduces, which, more often than not, is the more interesting result.`,
+
+      whatILoved: `**Deep Learning & Objective Functions ("The Golden Elephant"):** This opening chapter follows a family in Mumbai whose insurance premiums rise and fall based on an AI's read of their daily choices, down to who their daughter falls in love with. Lee's essay explains how deep learning works and traces its origins back to a 1967 concept that only became viable once data and computing power caught up decades later, then turns to the "objective function," the single goal an AI is trained to optimize, and how even a simple one can produce discriminatory outcomes with no explicit intent behind them.
+
+**Computer Vision, GANs & Deepfakes ("Gods Behind the Masks"):** Set in Lagos, this chapter follows a young man who uses deepfake technology both to hide his identity from the authorities and to impersonate women on dating apps. Lee's essay explains GANs, a forger network and a detective network trained against each other in permanent competition, which makes the resulting arms race feel structurally unwinnable rather than just a plot device.
+
+**NLP, GPT-3 & AI Companions ("Twin Sparrows"):** This chapter follows two Korean orphans, each given a personalized AI companion that manages their schedules, tutors them, and grows alongside them over years. Lee pairs this with a technical history of natural language processing through GPT-3, and the fiction does the chapter's best work by raising real, mostly unaddressed questions about parental oversight of a child's AI relationship.
+
+**Healthcare & Robotics ("Contactless Love"):** Set during a pandemic the book treats as a template for the next one, this chapter follows two people navigating quarantine and an almost entirely AI-mediated healthcare system. The digital health profile system depicted here, a biosensor membrane required to access transportation and basic services, is treated as background world-building but deserved more direct scrutiny.
+
+**Virtual, Augmented & Mixed Reality ("My Haunting Idol"):** Set in Tokyo, this chapter follows an obsessive fan who becomes a beta tester for a project recreating her deceased idol as an interactive virtual character. Its darkest material, "digital immortality," raises genuine copyright and consent questions the book poses but doesn't resolve.
+
+**Autonomous Vehicles ("The Holy Driver"):** This chapter follows a former delivery driver replaced by autonomous vehicles and a young gamer recruited into a project testing human versus AI driving decisions. The "augmented roads" proposal, redesigning infrastructure around AI's limitations, is one of the book's more pragmatic ideas, and one with real-world precedent already.
+
+**Quantum Computing & Autonomous Weapons ("Quantum Genocide"):** Set in Munich, this chapter covers two very different technologies in one story. The autonomous weapons material is where the book is at its most urgent, laying out the tradeoff between keeping a human in the decision loop and removing one for speed and precision.
+
+**Job Displacement & UBI ("The Job Savior"):** Set in San Francisco, this chapter follows a job reallocation agent whose growing disillusionment with her own work drives the story. Rather than simply arguing for or against UBI, the fiction shows a system collapsing under real institutional pressure, which lands with more force than the essay's own supporting statistics.
+
+**Post-Scarcity & Happiness ("Dreaming of Plenitude"):** The book's closing chapter is set in a version of Australia transformed by clean energy and automation. Lee names this state "plenitude" and is honest enough to undercut his own optimism about how achievable it really is, closing the book on an aspirational note rather than a prediction.`,
+
       keyTakeaways: [
-        '**Market Validation Must Come First:** The traditional approach of building first and finding customers later is backwards - validate demand before investing in development.',
-        '**Data Beats Opinions:** Focus on collecting your own fresh, relevant, trustworthy data rather than relying on focus groups, surveys, or other people\'s research.',
-        '**Most Products Fail:** 90% of products fail in the market regardless of team competence - the "Law of Market Failure" is blind and affects even the smartest companies.',
-        '**Test Cheap and Fast:** Use pretotyping techniques to gather market data quickly and inexpensively before committing significant resources.',
-        '**Skin in the Game Matters:** Look for meaningful commitment from potential customers rather than casual interest.',
-        '**Tweak Before You Pivot:** Don\'t abandon ideas after initial disappointing results - often small tweaks can dramatically change outcomes.'
+        '**The Essay/Fiction Pairing Is the Book\'s Greatest Strength:** The fiction consistently reveals consequences and tensions that the nonfiction essays describe but don\'t fully resolve.',
+        '**AI Bias Is a Design Byproduct, Not Intent:** Bias in AI systems, as the book depicts it, isn\'t usually intentional, it\'s a byproduct of how objective functions are designed, which makes it harder to detect and correct than more overt discrimination.',
+        '**The Deepfake Arms Race Is Structurally Unwinnable:** Detection alone can\'t win against a GAN\'s built-in ability to retrain and upgrade itself, which makes the book\'s proposed shift toward capture-point authentication one of its more forward-looking ideas.',
+        '**GPT-3\'s Core Flaw Still Holds Up:** The book\'s criticism that GPT-3 doesn\'t know what it doesn\'t know remains an accurate description of hallucination in AI systems today.',
+        '**The Book Raises Hard Questions More Than It Answers Them:** Child AI companions, digital immortality, and biometric happiness tracking are all left open, a fair approach for speculative fiction but one that leaves several threads unresolved.',
+        '**Human-in-the-Loop Is the More Defensible Position:** On both autonomous weapons and autonomous vehicles, the book lays out real tradeoffs between safety and performance without forcing a conclusion, but keeping a human in the loop is the stronger stance in both cases.',
+        '**Timeline Estimates Are Specific But Optimistic:** The book\'s technical predictions, like 40 percent of jobs automated by 2033 and an 80-percent chance of working quantum computers by 2041, are commendably falsifiable, even where they feel aggressive.',
+        '**UBI and Plenitude Relocate the Same Unresolved Question:** Both chapters are the book\'s most honest moments of self-critique, each acknowledging through fiction rather than argument that the proposed fix doesn\'t fully solve the underlying problem of human purpose and institutional trust.'
       ]
     },
     quotes: [
       {
-        text: 'Most new products will fail in the market - 90% of products fail regardless of how competently they are executed.',
-        page: 'Chapter 1'
+        text: 'No matter how we hide or if we change our surnames, our data is a shadow.',
+        page: 'Page 64'
       },
       {
-        text: 'The success equation only takes one key factor to mess up for the product to fail in the market.',
-        page: 'Chapter 1'
+        text: 'The core of the issue is the simplicity of the objective function.',
+        page: 'Page 79'
       },
       {
-        text: 'Your data needs to be Fresh, Relevant, Trustworthy, and Statistically significant.',
-        page: 'Chapter 3'
+        text: 'Longer term, the biggest problem is that GAN has a built-in mechanism to "upgrade" the forger network.',
+        page: 'Page 126'
       },
       {
-        text: 'The best and most reliable way to get market data is to get Your Own Data (YODA).',
-        page: 'Chapter 3'
+        text: 'I consider the obsession with AGI to be a narcissistic human tendency to view ourselves as the gold standard.',
+        page: 'Page 205'
       },
       {
-        text: 'Testing now beats testing later - get your ideas out of thought-land and start testing with an attainable market size.',
-        page: 'Chapter 7'
+        text: 'We humans have a good grasp on what we know and what we don\'t know. GPT-3 does not.',
+        page: 'Page 200'
+      },
+      {
+        text: 'Parents will never again have as much insight into their child as the child\'s AI.',
+        page: 'Page 166'
+      },
+      {
+        text: 'Such "digital immortality" or "digital reincarnation" will trigger many privacy and moral issues.',
+        page: 'Page 337'
+      },
+      {
+        text: 'The prowess of autonomous weapons largely comes from the speed and precision gained from not having a human in the loop.',
+        page: 'Page 482'
+      },
+      {
+        text: 'First, I\'ll describe quantum computing, which I believe has an 80-percent chance of working by 2041.',
+        page: 'Page 468'
+      },
+      {
+        text: 'UBI only prolong despair.',
+        page: 'Page 491'
+      },
+      {
+        text: 'We want something that is good, not just better than nothing.',
+        page: 'Page 498'
+      },
+      {
+        text: 'A successful transition to plenitude would require an improbable shift for corporations to prioritize social responsibility over profit.',
+        page: 'Page 658'
       }
     ]
-  }
+  },
+
 ]
 
 export function getBookById(id: string): BookReview | undefined {

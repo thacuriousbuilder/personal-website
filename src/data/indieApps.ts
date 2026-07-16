@@ -36,13 +36,14 @@ export const indieApps: IndieApp[] = [
     id: 'haven',
     title: 'HAVEN',
     category: 'health',
-    status: 'development',
+    status: 'live',
     date: '2026-01-24', // Adjust based on when you actually started
     tags: ['Health', 'Nutrition', 'AI', 'Fitness', 'B2B2C'],
     
     timeline: {
       concept: '12/10/2025',
       development: '12/13/2025', 
+      launch:'04/18/2026',
       updates: [
         'Completed comprehensive UI redesign with new design system (Teal #206E6B)',
         'Implemented 7-day baseline week tracking with no-judgment learning period',
@@ -60,20 +61,17 @@ export const indieApps: IndieApp[] = [
     },
     
     content: {
-      summary: 'HAVEN is a weekly calorie tracking app that challenges traditional daily restrictions by implementing a flexible 7-day budgeting system, that allow users to plan cheat days and stop felling guilty of having high calorie eating day. Built as a B2B2C platform, it serves both individual users seeking sustainable eating habits and fitness professionals managing client nutrition. The app features a unique baseline week where users track eating without judgment to establish personalized weekly budgets, enabling guilt-free cheat days and long-term habit sustainability.',
+      summary: 'HAVEN is a weekly calorie nutrition app that challenges traditional daily restrictions by implementing a flexible 7-day budgeting system.',
       
       keyFeatures: [
         'Weekly calorie budgeting instead of restrictive daily limits',
-        '7-day baseline week learning period with no-judgment tracking',
-        'Daily micro-check-ins: "Did yesterday differ from your baseline?"',
+        'Daily micro-check-ins: "Did you have any unlogged food or snacks last night?"',
         'Pre-planned cheat day system with automatic weekly calorie adjustments',
         'AI-powered food recognition and nutrition estimation',
-        'Real-time trainer-client messaging and progress tracking',
-        'Automated weekly budget calculations based on baseline data',
         'Comprehensive food logging with manual and AI-assisted entry',
-        'Trainer dashboard for managing multiple clients',
-        'Invite code system for secure trainer-client relationships',
-        'Progress analytics and weekly metrics tracking',
+        'Self-reflection: Understanding and creating a better relationship with food habits',
+        'Auto Budget Adjustment: Haven understands that life happens and you should not be punished for living life',
+        'Accountability Coaching: Work with AI Coach to better your habits and keep you accountable to hit your goals faster'
       ],
       
       techStack: [
@@ -91,7 +89,6 @@ export const indieApps: IndieApp[] = [
       challenges: [
         'Paradigm shift: Weekly vs daily calorie thinking requires user education',
         'Designing baseline week UX that motivates without judgment',
-        'Balancing dual audiences (B2B2C) with differentiated experiences',
         'AI food recognition accuracy and nutrition estimation',
         'Real-time features (messaging, updates) with offline capability',
         'Comprehensive security with Row Level Security for multi-tenant data',
@@ -99,29 +96,28 @@ export const indieApps: IndieApp[] = [
     },
     
     links: {
-      github: 'https://github.com/thacuriousbuilder/haven', // Update with actual repo
+      github: 'https://github.com/thacuriousbuilder/haven', 
     },
     
     media: [{
-      src: '/images/apps/HAVEN.svg', // Update with actual logo path
+      src: '/images/apps/HAVEN.svg', 
       alt: 'HAVEN - Weekly Nutrition Freedom'
     }]
   },
   {
-    id: 'savantra',
-    title: 'Savantra',
+    id: 'memo',
+    title: 'MEMO',
    
     category: 'productivity',
-    status: 'planning',
+    status: 'development',
     date: '2025-01-10',
     tags: ['Productivity', 'Education', 'AI', 'Study'],
    
     timeline: {
       concept: '10/15/2024',
-      development: '06/15/2025',
+      development: '06/15/2026',
       updates: [
-        'Created Course management with CRUD'
-,        'Placeholder screens for the app: Home, Course, Create, Quiz, Profile',
+      'Placeholder screens for the app: Home, Course, Create, Quiz, Profile',
         'Navigation Architecture implemented: Root Navigation, Bottom Tab Navigation, Stack Navigation',
         'Created the theme and components',
         'Figma Mockups',
@@ -129,10 +125,10 @@ export const indieApps: IndieApp[] = [
       ]
     },
     content: {
-      summary: 'Savantra is an app, which helps students study smarter on their time! The app utilizes AI to create a micro-learning/studying experience through the use of daily quizzes from the student course topics from their syllabus and personal notes. Savantra manages student tasks and deadlines, and sends perfectly timed reminders. The app adapts to the students performance and upcoming deadlines.',
+      summary: 'MEMO is an app, which helps students study smarter on their time! The app utilizes AI to create a micro-learning/studying experience through the use of daily quizzes from the student course topics from their personal notes. MEMO manages student tasks and deadlines, and sends perfectly timed reminders. The app adapts to the students performance and upcoming deadlines.',
       keyFeatures: [
         'AI-powered micro-learning/studying experience',
-        'Daily quizzes from the student course topics from their syllabus and personal notes',
+        'Daily quizzes from the student course topics from their personal notes',
         'Task and deadline management',
         'Perfectly timed reminders',
         'Progress analytics and insights',
@@ -143,17 +139,17 @@ export const indieApps: IndieApp[] = [
       techStack: ['React Native', 'Expo', 'Supase', 'TypeScript', 'React Native Elements'],
       challenges: [
         'Utilizing AI to create a micro-learning/studying experience',
-        'Properly prompting the AI to parse the syllabus and notes',
+        'Properly prompting the AI to parse the course topics and notes',
         'Creating a user-friendly interface for the app',
-        
+        'Properly prompting the AI to create the daily quizzes',
       ]
     },
     links: {
-      github: 'https://github.com/thacuriousbuilder/savantra',
+      github: 'https://github.com/thacuriousbuilder/memo',
     },
     media: [{
-      src: '/images/apps/savantralogo.png',
-      alt: 'Savantra screenshot'
+      src: '/images/apps/memo.png',
+      alt: 'MEMO screenshot'
     }]
   },
   {
