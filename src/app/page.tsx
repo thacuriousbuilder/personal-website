@@ -109,13 +109,12 @@ export default function HomePage() {
         
         <div className="max-w-3xl space-y-4 text-gray-700 mb-8">
           <p>
-            Welcome to my simple corner on the web—a space 
+            Welcome to my simple corner on the web, a space 
             to showcase curiosities, projects, and ideas.
           </p>
           
           <p>
-            I enjoy exploring everything from  security research/implementation to app 
-            development and the endless possibilities born from a curious mindset.
+            I enjoy exploring everything from app development to security research/implementation, and the endless possibilities born from a curious mindset.
           </p>
           
           <p className='font-bold'>
@@ -143,12 +142,33 @@ export default function HomePage() {
         </div>
       </section>
 
+         {/* Indie Apps Section */}
+         <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">
+          <Link href="/apps" className="hover:text-[#008080] transition-colors">App Projects</Link>
+        </h2>
+        <p className="text-sm text-gray-600 mb-6">Side projects and apps I&apos;ve built</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {featuredApps.map((app, index) => (
+            <ProjectCard 
+              key={index}
+              href={app.href}
+              title={app.title}
+              variant={app.variant}
+              category={app.category}
+              placeholder={app.placeholder}
+              coverImage={app.coverImage}
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Cybersecurity Section */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-2">
           <Link href="/cybersecurity" className="hover:text-[#008080] transition-colors">Cybersecurity</Link>
         </h2>
-        <p className="text-sm text-gray-600 mb-6">Projects & writeups</p>
+        <p className="text-sm text-gray-600 mb-6">Security projects and writeups</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {featuredProjects.map((project, index) => (
             <ProjectCard 
@@ -209,26 +229,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Indie Apps Section */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-bold mb-2">
-          <Link href="/apps" className="hover:text-[#008080] transition-colors">Indie Apps</Link>
-        </h2>
-        <p className="text-sm text-gray-600 mb-6">Vibes & creations</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {featuredApps.map((app, index) => (
-            <ProjectCard 
-              key={index}
-              href={app.href}
-              title={app.title}
-              variant={app.variant}
-              category={app.category}
-              placeholder={app.placeholder}
-              coverImage={app.coverImage}
-            />
-          ))}
-        </div>
-      </section>
+
 
       {/* Ideas & Curiosity Section */}
       <section className="mb-16">
@@ -239,7 +240,6 @@ export default function HomePage() {
         </div>
         <div className="mt-2 space-y-2">
           <a href="https://docs.google.com/document/d/1T8l4ws8wbej3HDCF-laSyiwgLkxFdsEtwxyOIYa16g4/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="block font-medium hover:text-[#008080] transition-colors">• EarlyBird</a>
-          <a href="https://docs.google.com/document/d/1b8EuTTVL2usVDMyLvlWJ1bEoA2c8rucJ-jQbzMnL0Mw/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="block font-medium hover:text-[#008080] transition-colors">• PhishProof</a>
           <a href="https://docs.google.com/document/d/1pOg5BiWvVUl7yG74FAuK5WxAlm5tNj_WbGesqtt0SUc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="block font-medium hover:text-[#008080] transition-colors">• TinyCupid</a>
         </div>
       </section>
